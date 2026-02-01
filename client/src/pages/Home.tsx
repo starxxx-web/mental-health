@@ -43,9 +43,12 @@ function LandingPage() {
             在这里,您可以安全地表达自己的感受,获得温暖的支持和科学的指导。
           </p>
           
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg" asChild className="text-lg px-8">
               <a href={getLoginUrl()}>开始使用</a>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="text-lg px-8">
+              <Link href="/demo">功能展示</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-lg px-8">
               <a href="#features">了解更多</a>

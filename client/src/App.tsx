@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Chat from "./pages/Chat";
 import Assessments from "./pages/Assessments";
 import TreatmentPlans from "./pages/TreatmentPlans";
+import Demo from "./pages/Demo";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/chat"} component={Chat} />
       <Route path={"/assessments"} component={Assessments} />
       <Route path={"/treatment-plans"} component={TreatmentPlans} />
+      <Route path={"/demo"} component={Demo} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
